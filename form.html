@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fill Database</title>
+</head>
+<body>
+    <h2>Fill in User Information</h2>
+    <form action="new_member.php" method="POST" enctype="multipart/form-data">
+        <label for="picture">Upload Picture:</label>
+        <input type="file" id="picture" name="picture"><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" maxlength="4" required><br><br>
+
+        <label for="RFID_UID">RFID UID:</label>
+        <input type="text" id="RFID_UID" name="RFID_UID" maxlength="8"><br><br>
+
+        <label for="login_time">Login Time:</label>
+        <input type="datetime-local" id="login_time" name="login_time"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
